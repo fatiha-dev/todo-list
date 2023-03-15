@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e4bc3f7160.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Dancing+Script:wght@500&family=Mulish&family=Poppins:wght@300;400&family=Rubik:wght@500&family=Telex&display=swap');
+      </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body >
+    <header class="primary-header flex">
+        <div>
+            <h1 class="ff-sans-normal text-dark letter-spacing-2 fs-600 logo">TO DO LIST</h1>
+        </div>
+
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
+            <span class="sr-only" aria-expanded="false">Menu</span><i class="fa-solid fa-pen"></i></button>
+
+        <nav>
+            <ul id="primary-navigation" class="primary-navigation underline-indicators flex" data-visible="false">
+                <li class="active">
+                    <a class=" text-dark fs-300 ff-sans-normal" href="#" rel="#" style="color:black" >Today</a>
+                </li>
+                <li>
+                    <a class=" text-dark fs-300 ff-sans-normal" href="" style="color:black">This week</a>
+                </li>
+                <li>
+                    <a class=" text-dark fs-300 ff-sans-normal" href="" style="color:black">My projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="flex-container">
+        <form action="#" class="form">
+            <input type="text"
+                   id="new-task-input"
+                   class="text-input new-task-input"
+                   placeholder="add a todo">
+                   
+            <button type="submit"
+                    id="new-task-submit"
+                    class="action-btn new-task-submit">
+                    <i class="fa-solid fa-plus"></i>
+            </button> 
+        </form>
+        <div class="todo-list">
+        </div>
+        
+    </div>
+
+    </div>
+    <script src="bundle.js" defer></script>
+</body>
+</html>
